@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Card from "./cards";
+import Card from './Cards'; 
 import { useEffect } from 'react';
 
 const RecipeList = ({SearchTerm}) => {
@@ -34,8 +34,8 @@ const RecipeList = ({SearchTerm}) => {
           key={index}
           id={recipe.idMeal}
           title={recipe.strMeal}
-          time={recipe.strTags || "30 min"} // Or use a fallback
-   // Show category as type
+          time={recipe.strTags || "30 min"} 
+   
           image={recipe.strMealThumb}
         />
       ))

@@ -16,7 +16,7 @@ const Card = ({ title, time, image,id }) => {
       <h1 className="text-xl font-semibold mb-1">{title}</h1>
       <p className="text-sm text-gray-600 mb-1">⏱️ {time}</p>
       <p className="text-sm text-green-600 font-medium mb-3"></p>
-      <Link to={`/recipe/${id}`}> {/* Link to the recipe details page */}
+      <Link to={`/recipe/${id}`}> 
         <button className="bg-orange-500 text-white px-4 py-2 rounded mt-2">
            View Recipe
         </button>
