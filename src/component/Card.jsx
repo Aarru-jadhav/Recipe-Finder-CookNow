@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Card = ({ title, time, image,id }) => {
   return (
-    <div className="card border-2 border-gray-300 rounded-xl p-4 shadow-md w-64 hover:scale-105 transition-transform duration-300">
+   <div className="card border-2 border-gray-300 rounded-xl p-4 shadow-md w-64 hover:scale-105 transition-transform duration-300">
       <div className="imagecontainer h-40 w-full mb-3 bg-gray-100 rounded-md overflow-hidden">
         <img
           src={image}
@@ -24,9 +24,8 @@ const Card = ({ title, time, image,id }) => {
 
 
     </div>
-  );
-};
+  )
+}
 
-export default Card;
-
+export default Card    
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import Card from './Cards'; 
+
 import { useEffect } from 'react';
+import Card from './Card';
 
 const RecipeList = ({SearchTerm}) => {
 
@@ -30,7 +31,7 @@ const RecipeList = ({SearchTerm}) => {
     <div className="flex flex-wrap gap-6 justify-center pt-8">
     {recipis ? (
       recipis.map((recipe, index) => (
-        <Card 
+        <Card
           key={index}
           id={recipe.idMeal}
           title={recipe.strMeal}
@@ -47,6 +48,3 @@ const RecipeList = ({SearchTerm}) => {
 };
 
 export default RecipeList;
-
-
-
